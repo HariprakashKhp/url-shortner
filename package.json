@@ -1,0 +1,31 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "learning-project01",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HariprakashKhp/url-shortner.git"
+  },
+  "keywords": [
+    "nodejs",
+    "ejs",
+    "javascript",
+    "url-shortner"
+  ],
+  "author": "hariprakashk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HariprakashKhp/url-shortner/issues"
+  },
+  "homepage": "https://github.com/HariprakashKhp/url-shortner#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0"
+  }
+}
