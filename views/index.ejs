@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Url Shortner</h1>
-    <form action="/" method="post">
+    <form action="/short" method="post">
         <label for="url">URL</label>
         <input required placeholder="url" type="url" id="url" name="url" />
         <button type="submit">Shrink!</button>
@@ -24,11 +24,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href="https://Google.com">Google.com</a></td>
-                <td><a href="/123">123</a></td>
-                <td>10</td>
-            </tr>
+            <% data.forEach(d => { %>
+                <tr>
+                    <td><a href="<%= d.full %>"><%= d.full %></a></td>
+                    <td><a href="<%= d.short %>"><%= d.short %></a></td>
+                    <td><%= d.clicks %></td>
+                </tr>
+            <%})%>
         </tbody>
     </table>
 </body>
